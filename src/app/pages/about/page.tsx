@@ -3,6 +3,17 @@ import { Col, Grid, Row } from "antd";
 // import { ButtonPrimary, ButtonSecondary } from "../components/Button";
 // import { DividerSection } from "../components/Divider";
 import { TextBody, TextDescription, TextHeader } from "@/components/text";
+import {
+  ButtonIcon,
+  ButtonPrimary,
+  ButtonSecondary,
+} from "@/components/button";
+import {
+  GithubFilled,
+  InstagramFilled,
+  LinkedinFilled,
+  MailFilled,
+} from "@ant-design/icons";
 
 const AboutPage = () => {
   const { useBreakpoint } = Grid;
@@ -122,16 +133,48 @@ const AboutPage = () => {
               </>
             )}
 
-            {/* <Row gutter={[16, 16]} justify="start" style={{ marginTop: 48 }}>
+            <Row gutter={[16, 16]} justify="start" style={{ marginTop: 48 }}>
               <Col>
-                <a href="/PremkamonResume.pdf" target="_blank">
-                  <ButtonPrimary>View my resume</ButtonPrimary>
+                {/* <ButtonPrimary href="/PremkamonResume.pdf" target="_blank"> */}
+                <ButtonPrimary type="primary">View my resume</ButtonPrimary>
+              </Col>
+              <Col>
+                <ButtonSecondary type="primary">Get in touch</ButtonSecondary>
+              </Col>
+
+              {/* <Col>
+                <a target={"_blank"} href={""} rel="noreferrer">
+                  <ButtonIcon type="link">
+                    <MailFilled />
+                  </ButtonIcon>
                 </a>
               </Col>
               <Col>
-                <ButtonSecondary>Get in touch</ButtonSecondary>
+                <a target={"_blank"} href={""} rel="noreferrer">
+                  <ButtonIcon type="link">
+                    <LinkedinFilled />
+                  </ButtonIcon>
+                </a>
               </Col>
-            </Row> */}
+              <Col>
+                <a target={"_blank"} href={""} rel="noreferrer">
+                  <ButtonIcon type="link">
+                    <GithubFilled />
+                  </ButtonIcon>
+                </a>
+              </Col>
+              <Col>
+                <a
+                  target={"_blank"}
+                  href={"https://www.instagram.com/yokxpkm"}
+                  rel="noreferrer"
+                >
+                  <ButtonIcon type="link">
+                    <InstagramFilled />
+                  </ButtonIcon>
+                </a>
+              </Col> */}
+            </Row>
           </Col>
         </Row>
       </section>

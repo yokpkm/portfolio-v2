@@ -102,7 +102,6 @@ export const NavbarMobile: React.FC<Props> = ({ themeToggle, theme }) => {
         <Row justify="center">
           <TextMenu>Contact</TextMenu>
         </Row>
-
         <Row justify="center" gutter={16} align="middle">
           <Col>
             <a
@@ -115,11 +114,10 @@ export const NavbarMobile: React.FC<Props> = ({ themeToggle, theme }) => {
               </ButtonIcon>
             </a>
           </Col>
-
           <Col>
             <a
               target={"_blank"}
-              href={"https://www.linkedin.com/in/yok-premkamon-343362233"}
+              href={"https://www.linkedin.com/in/yokpkm"}
               rel="noreferrer"
             >
               <ButtonIcon type="link">
