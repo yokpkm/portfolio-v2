@@ -65,7 +65,7 @@ export const ButtonIcon = styled(Button)`
   svg {
     width: auto;
     height: 24px;
-    border-radius: 8px;
+    border-radius: 6px;
     color: ${(props) => props.theme.fontColor.default};
   }
 

@@ -14,6 +14,11 @@ import {
   LinkedinFilled,
   MailFilled,
 } from "@ant-design/icons";
+import { createFromIconfontCN } from "@ant-design/icons";
+
+const IconFont = createFromIconfontCN({
+  scriptUrl: "//at.alicdn.com/t/font_8d5l8fzk5b87iudi.js",
+});
 
 const AboutPage = () => {
   const { useBreakpoint } = Grid;
@@ -142,7 +147,7 @@ const AboutPage = () => {
                 <ButtonSecondary type="primary">Get in touch</ButtonSecondary>
               </Col>
 
-              {/* <Col>
+              <Col>
                 <a target={"_blank"} href={""} rel="noreferrer">
                   <ButtonIcon type="link">
                     <MailFilled />
@@ -173,7 +178,7 @@ const AboutPage = () => {
                     <InstagramFilled />
                   </ButtonIcon>
                 </a>
-              </Col> */}
+              </Col>
             </Row>
           </Col>
         </Row>
