@@ -1,11 +1,12 @@
 import React from "react";
 import styled from "styled-components";
 import Image from "next/image";
-import { Button, Col, Row, Switch } from "antd";
+import { Button, Col, Row } from "antd";
 import { MoonFilled } from "@ant-design/icons";
 import { PropsTheme } from "@/theme";
 import { ThemeType } from "../../../utils/constants";
 import { TextMenu } from "@/components/text";
+import { StyledSwitch } from "@/components/switch";
 
 interface Props {
   theme: ThemeType;
@@ -50,7 +51,7 @@ export const NavbarDesktop: React.FC<Props> = ({ theme, themeToggle }) => {
               <TextMenu>Contact</TextMenu>
             </Col>
             <Col>
-              <Switch
+              <StyledSwitch
                 onClick={() => themeToggle()}
                 checkedChildren={<MoonFilled />}
                 unCheckedChildren={<MoonFilled />}

@@ -3,22 +3,7 @@ import { Col, Grid, Row } from "antd";
 // import { ButtonPrimary, ButtonSecondary } from "../components/Button";
 // import { DividerSection } from "../components/Divider";
 import { TextBody, TextDescription, TextHeader } from "@/components/text";
-import {
-  ButtonIcon,
-  ButtonPrimary,
-  ButtonSecondary,
-} from "@/components/button";
-import {
-  GithubFilled,
-  InstagramFilled,
-  LinkedinFilled,
-  MailFilled,
-} from "@ant-design/icons";
-import { createFromIconfontCN } from "@ant-design/icons";
-
-const IconFont = createFromIconfontCN({
-  scriptUrl: "//at.alicdn.com/t/font_8d5l8fzk5b87iudi.js",
-});
+import { ButtonPrimary, ButtonSecondary } from "@/components/button";
 
 const AboutPage = () => {
   const { useBreakpoint } = Grid;
@@ -145,39 +130,6 @@ const AboutPage = () => {
               </Col>
               <Col>
                 <ButtonSecondary type="primary">Get in touch</ButtonSecondary>
-              </Col>
-
-              <Col>
-                <a target={"_blank"} href={""} rel="noreferrer">
-                  <ButtonIcon type="link">
-                    <MailFilled />
-                  </ButtonIcon>
-                </a>
-              </Col>
-              <Col>
-                <a target={"_blank"} href={""} rel="noreferrer">
-                  <ButtonIcon type="link">
-                    <LinkedinFilled />
-                  </ButtonIcon>
-                </a>
-              </Col>
-              <Col>
-                <a target={"_blank"} href={""} rel="noreferrer">
-                  <ButtonIcon type="link">
-                    <GithubFilled />
-                  </ButtonIcon>
-                </a>
-              </Col>
-              <Col>
-                <a
-                  target={"_blank"}
-                  href={"https://www.instagram.com/yokxpkm"}
-                  rel="noreferrer"
-                >
-                  <ButtonIcon type="link">
-                    <InstagramFilled />
-                  </ButtonIcon>
-                </a>
               </Col>
             </Row>
           </Col>

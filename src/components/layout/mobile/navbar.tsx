@@ -1,12 +1,12 @@
 import React, { useContext, useState } from "react";
 import styled, { ThemeContext } from "styled-components";
 import Image from "next/image";
-import { Button, Col, Row, Switch } from "antd";
+import { Button, Col, Row } from "antd";
 import {
   MoonFilled,
   MailFilled,
-  GithubFilled,
   LinkedinFilled,
+  GithubFilled,
   InstagramFilled,
 } from "@ant-design/icons";
 import { ThemeType } from "@/utils/constants";
@@ -14,6 +14,7 @@ import { LightTheme, DarkTheme, PropsTheme } from "@/theme";
 import { TextMenu } from "@/components/text";
 import { ButtonIcon } from "@/components/button";
 import { StyledDrawer } from "@/components/drawer";
+import { StyledSwitch } from "@/components/switch";
 
 interface Props {
   themeToggle: () => void;
@@ -53,7 +54,7 @@ export const NavbarMobile: React.FC<Props> = ({ themeToggle, theme }) => {
             />
           </Col>
           <Col>
-            <Switch
+            <StyledSwitch
               onClick={() => themeToggle()}
               checkedChildren={<MoonFilled />}
               unCheckedChildren={<MoonFilled />}
