@@ -13,8 +13,8 @@ import { ThemeType } from "@/utils/constants";
 import { LightTheme, DarkTheme, PropsTheme } from "@/theme";
 import { TextMenu } from "@/components/text";
 import { ButtonIcon } from "@/components/button";
-import { StyledDrawer } from "@/components/drawer";
 import { StyledSwitch } from "@/components/switch";
+import { StyledDrawer } from "@/components/drawer";
 
 interface Props {
   themeToggle: () => void;
@@ -38,7 +38,6 @@ export const NavbarMobile: React.FC<Props> = ({ themeToggle, theme }) => {
                     height={36}
                     src="/logo/logo-lightTheme.svg"
                     alt="false"
-                    style={{ display: "flex" }}
                   />
                 ) : (
                   <Image
@@ -46,11 +45,10 @@ export const NavbarMobile: React.FC<Props> = ({ themeToggle, theme }) => {
                     height={36}
                     src="/logo/logo-darkTheme.svg"
                     alt="false"
-                    style={{ display: "flex" }}
                   />
                 )
               }
-              type="text"
+              type="link"
             />
           </Col>
           <Col>
@@ -69,7 +67,6 @@ export const NavbarMobile: React.FC<Props> = ({ themeToggle, theme }) => {
                     height={24}
                     src="/icons/ic-menu-lightTheme.svg"
                     alt="false"
-                    style={{ display: "flex" }}
                   />
                 ) : (
                   <Image
@@ -77,11 +74,10 @@ export const NavbarMobile: React.FC<Props> = ({ themeToggle, theme }) => {
                     height={24}
                     src="/icons/ic-menu-darkTheme.svg"
                     alt="false"
-                    style={{ display: "flex" }}
                   />
                 )
               }
-              type="text"
+              type="link"
               onClick={() => setShowMenu(true)}
               style={{ color: themeContext.logo.default }}
             />
@@ -90,6 +86,7 @@ export const NavbarMobile: React.FC<Props> = ({ themeToggle, theme }) => {
       </WrapperNavbar>
       <StyledDrawer
         placement="top"
+        height="auto"
         open={showMenu}
         closable={false}
         onClose={() => setShowMenu(false)}
@@ -100,8 +97,8 @@ export const NavbarMobile: React.FC<Props> = ({ themeToggle, theme }) => {
         <Row justify="center" style={{ marginBottom: 32 }}>
           <TextMenu>About</TextMenu>
         </Row>
-        <Row justify="center">
-          <TextMenu>Contact</TextMenu>
+        <Row justify="center" style={{ marginBottom: 16 }}>
+          <TextMenu>Contact:</TextMenu>
         </Row>
         <Row justify="center" gutter={16} align="middle">
           <Col>

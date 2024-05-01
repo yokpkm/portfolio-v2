@@ -36,7 +36,7 @@ export const NavbarDesktop: React.FC<Props> = ({ theme, themeToggle }) => {
                 />
               )
             }
-            type="text"
+            type="link"
           />
         </Col>
         <Col>

@@ -12,6 +12,6 @@ export const GlobalStyle = createGlobalStyle`
   }
   
   html {
-    height: unset ;
+    height: unset;
   }
 `;

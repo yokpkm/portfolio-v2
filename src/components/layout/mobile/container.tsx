@@ -22,5 +22,5 @@ const WrapperContainer = styled.div`
 const StyledContainer = styled.div`
   margin: 120px auto;
   max-width: 991px;
-  min-width: 320px;
+  /* min-width: 320px; */
 `;

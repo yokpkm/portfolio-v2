@@ -136,11 +136,6 @@ const AboutPage = () => {
               <Col>
                 <ButtonSecondary type="primary">Get in touch</ButtonSecondary>
               </Col>
-              <Col>
-                <ButtonIcon type="link">
-                  <MailFilled />
-                </ButtonIcon>
-              </Col>
             </Row>
           </Col>
         </Row>
