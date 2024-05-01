@@ -3,7 +3,12 @@ import { Col, Grid, Row } from "antd";
 // import { ButtonPrimary, ButtonSecondary } from "../components/Button";
 // import { DividerSection } from "../components/Divider";
 import { TextBody, TextDescription, TextHeader } from "@/components/text";
-import { ButtonPrimary, ButtonSecondary } from "@/components/button";
+import {
+  ButtonIcon,
+  ButtonPrimary,
+  ButtonSecondary,
+} from "@/components/button";
+import { MailFilled } from "@ant-design/icons";
 
 const AboutPage = () => {
   const { useBreakpoint } = Grid;
@@ -130,6 +135,11 @@ const AboutPage = () => {
               </Col>
               <Col>
                 <ButtonSecondary type="primary">Get in touch</ButtonSecondary>
+              </Col>
+              <Col>
+                <ButtonIcon type="link">
+                  <MailFilled />
+                </ButtonIcon>
               </Col>
             </Row>
           </Col>

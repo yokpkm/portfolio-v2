@@ -2,21 +2,19 @@ import styled from "styled-components";
 import { Button } from "antd";
 
 export const ButtonPrimary = styled(Button)`
-  && {
-    padding: 0px 24px;
-    height: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: ${(props) => props.theme.buttonColors.background} !important;
-    border: 0px solid ${(props) => props.theme.fontColor.link};
-    border-radius: 360px;
-    box-shadow: unset;
-    color: ${(props) => props.theme.buttonColors.font} !important;
-    font-size: ${(props) => props.theme.fontSize.body};
-    font-weight: 600;
-    letter-spacing: 0.08em;
-  }
+  padding: 0px 24px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: ${(props) => props.theme.buttonColors.background} !important;
+  border: 0px solid ${(props) => props.theme.fontColor.link};
+  border-radius: 360px;
+  box-shadow: unset;
+  font-size: ${(props) => props.theme.fontSize.body};
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  color: ${(props) => props.theme.buttonColors.font} !important;
 
   &&.ant-btn:hover,
   .ant-btn:focus,
@@ -28,21 +26,19 @@ export const ButtonPrimary = styled(Button)`
 `;
 
 export const ButtonSecondary = styled(Button)`
-  && {
-    padding: 0px 24px;
-    height: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: ${(props) => props.theme.backgroundColors.default} !important;
-    border: 2px solid ${(props) => props.theme.fontColor.default};
-    border-radius: 360px;
-    box-shadow: unset;
-    color: ${(props) => props.theme.fontColor.default} !important;
-    font-size: ${(props) => props.theme.fontSize.body};
-    font-weight: 600;
-    letter-spacing: 0.08em;
-  }
+  padding: 0px 24px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: ${(props) => props.theme.backgroundColors.default} !important;
+  border: 2px solid ${(props) => props.theme.fontColor.default};
+  border-radius: 360px;
+  box-shadow: unset;
+  color: ${(props) => props.theme.fontColor.default} !important;
+  font-size: ${(props) => props.theme.fontSize.body};
+  font-weight: 600;
+  letter-spacing: 0.08em;
 
   &&.ant-btn:hover,
   .ant-btn:focus,
@@ -54,13 +50,11 @@ export const ButtonSecondary = styled(Button)`
 `;
 
 export const ButtonIcon = styled(Button)`
-  && {
-    padding: 0;
-    height: auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
+  padding: 0;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
   svg {
     width: auto;
@@ -70,8 +64,8 @@ export const ButtonIcon = styled(Button)`
   }
 
   :hover,
-  :focus,
-  :active {
+  :active,
+  :focus {
     color: ${(props) => props.theme.fontColor.link} !important;
   }
 `;

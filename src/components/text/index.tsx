@@ -1,81 +1,82 @@
-import Text from "antd/lib/typography/Text";
 import styled from "styled-components";
+import { Typography } from "antd";
 
-export const TextHeader = styled(Text)`
+export const TextHeader = styled(Typography)`
   font-size: ${(props) => props.theme.fontSize.header};
   font-weight: 700;
-  color: ${(props) => props.theme.fontColor.default};
   letter-spacing: 0.03em;
+  color: ${(props) => props.theme.fontColor.default};
   margin-bottom: 0;
 `;
 
-export const TextTitle = styled(Text)`
+export const TextTitle = styled(Typography)`
   font-size: ${(props) => props.theme.fontSize.title};
   font-weight: 700;
-  color: ${(props) => props.theme.fontColor.default};
   letter-spacing: 0.03em;
+  color: ${(props) => props.theme.fontColor.default};
   margin-bottom: 0;
 `;
 
-export const TextMenu = styled(Text)`
+export const TextMenu = styled(Typography)`
   font-size: ${(props) => props.theme.fontSize.menu};
   font-weight: 400;
+  letter-spacing: 0.04em;
   color: ${(props) => props.theme.fontColor.default};
-  letter-spacing: 0.04em;
   margin-bottom: 0;
 
-  :hover,
-  :focus,
-  :active {
-    color: ${(props) => props.theme.fontColor.link};
-  }
-`;
-
-export const TextLink = styled(Text)`
-  font-size: ${(props) => props.theme.fontSize.body};
-  font-weight: 400;
-  color: ${(props) => props.theme.fontColor.medium};
-  letter-spacing: 0.04em;
-  margin-bottom: 0;
-
-  :hover,
-  :focus,
-  :active {
+  &&.ant-typography:hover,
+  .ant-typography:active,
+  .ant-typography:focus {
     color: ${(props) => props.theme.fontColor.link};
     cursor: pointer;
   }
 `;
 
-export const TextBody = styled(Text)`
+export const TextLink = styled(Typography)`
   font-size: ${(props) => props.theme.fontSize.body};
   font-weight: 400;
-  color: ${(props) => props.theme.fontColor.medium};
   letter-spacing: 0.04em;
+  color: ${(props) => props.theme.fontColor.medium};
+  margin-bottom: 0;
+
+  &&.ant-typography:hover,
+  .ant-typography:active,
+  .ant-typography:focus {
+    color: ${(props) => props.theme.fontColor.link};
+    cursor: pointer;
+  }
+`;
+
+export const TextBody = styled(Typography)`
+  font-size: ${(props) => props.theme.fontSize.body};
+  font-weight: 400;
+  letter-spacing: 0.04em;
+  color: ${(props) => props.theme.fontColor.medium};
   margin-bottom: 0;
 `;
 
-export const TextContent = styled(Text)`
+export const TextContent = styled(Typography)`
   font-size: ${(props) => props.theme.fontSize.content};
   font-weight: 400;
-  color: ${(props) => props.theme.fontColor.medium};
   letter-spacing: 0.04em;
-  margin-bottom: 0;
   line-height: 22px;
+  color: ${(props) => props.theme.fontColor.medium};
+  margin-bottom: 0;
 `;
 
-export const TextDescription = styled(Text)`
+export const TextDescription = styled(Typography)`
   font-size: ${(props) => props.theme.fontSize.description};
   font-weight: 400;
-  color: ${(props) => props.theme.fontColor.medium};
   letter-spacing: 0.04em;
+  color: ${(props) => props.theme.fontColor.medium};
   margin-bottom: 0;
 `;
 
-export const TextModal = styled(Text)`
+export const TextModal = styled(Typography)`
   font-size: ${(props) => props.theme.fontSize.menu};
   font-weight: 400;
-  color: ${(props) => props.theme.fontColor.medium};
   letter-spacing: 0.04em;
-  margin-bottom: 0;
   line-height: 26px;
+  color: ${(props) => props.theme.fontColor.medium};
+  margin-bottom: 0;
 `;
