@@ -69,3 +69,27 @@ export const ButtonIcon = styled(Button)`
     color: ${(props) => props.theme.fontColor.link} !important;
   }
 `;
+
+export const ButtonMore = styled(Button)`
+  padding: 0px 20px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: ${(props) => props.theme.buttonColors.background} !important;
+  border: 0px solid ${(props) => props.theme.fontColor.link};
+  border-radius: 360px;
+  box-shadow: unset;
+  font-size: ${(props) => props.theme.fontSize.description};
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  color: ${(props) => props.theme.buttonColors.font} !important;
+
+  &&.ant-btn:hover,
+  .ant-btn:focus,
+  .ant-btn:active {
+    background: ${(props) => props.theme.fontColor.link} !important;
+    border: 0px solid ${(props) => props.theme.fontColor.link};
+    color: ${(props) => props.theme.buttonColors.font} !important;
+  }
+`;

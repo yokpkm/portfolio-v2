@@ -80,3 +80,11 @@ export const TextModal = styled(Typography)`
   color: ${(props) => props.theme.fontColor.medium};
   margin-bottom: 0;
 `;
+
+// export const TextButton = styled(Typography)`
+//   font-size: ${(props) => props.theme.fontSize.description};
+//   font-weight: 600;
+//   letter-spacing: 0.08em;
+//   color: ${(props) => props.theme.buttonColors.font};
+//   margin-bottom: 0;
+// `;
